@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageViewTemple"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sensoji" />
+
+    <!-- Overlay for the Text -->
+    <LinearLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#80000000"> <!-- Semi-transparent black -->
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensoji Temple"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_below="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It is Tokyo's oldest temple, and one of its most significant. Formerly associated with the Tendai sect of Buddhism."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Button -->
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="See Details"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:layout_alignBottom="@+id/homeimg"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:textSize="17dp"
+            android:id="@+id/pindah"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
